@@ -1,4 +1,5 @@
-# code
+# Training code
 
-This folder is used for the MUJ NLP capstone training repository.
-
+Place reusable code produced during the training program in this directory.
+The EmotiSense capstone application is maintained separately in
+[`../capstone/EmotiSense/`](../capstone/EmotiSense/README.md).

@@ -1,83 +1,56 @@
 # MUJ-DS-23FE10CDS00347
 
-## Student Details
+## Student details
 
 | Field | Details |
 |---|---|
 | Name | Mitansh Wagde |
-| Registration Number | 23FE10CDS00347 |
+| Registration number | 23FE10CDS00347 |
 | Branch | B.Tech Data Science |
 | Batch | F |
-| GitHub Username | mitanshwagde-svg |
-| Project Title | EmotiSense – NLP Sentiment & Emotion Analyzer |
+| Project title | EmotiSense - NLP Sentiment & Emotion Analyzer |
+| GitHub username | [mitanshwagde-svg](https://github.com/mitanshwagde-svg) |
 
----
-
-## Training Program
+## Training program
 
 NLP Training / Capstone Project
 
-This repository contains the coursework, assignments, project work,
-documentation, and other deliverables completed as part of the training program.
+## Repository contents
 
----
+| Path | Purpose |
+|---|---|
+| [assignments/](assignments/README.md) | Training assignment submissions |
+| [notebooks/](notebooks/README.md) | Exploratory and instructional notebooks |
+| [code/](code/README.md) | Reusable training code and utilities |
+| [resources/](resources/README.md) | Supporting resources, screenshots, and evaluation evidence |
+| [presentations/](presentations/README.md) | Capstone presentation materials |
+| [capstone/](capstone/README.md) | Capstone project source and documentation |
+| [capstone/EmotiSense/](capstone/EmotiSense/README.md) | EmotiSense application, setup guide, and usage |
 
-## Repository Structure
+## Capstone project
 
-[structure here]
+EmotiSense is a Streamlit application that combines text preprocessing and TF-IDF keyword extraction with Gemini-based sentiment and emotion analysis. See the [project guide](capstone/EmotiSense/README.md) for features, setup, and usage.
 
----
+## Submission checklist
 
-## Capstone Project
+Before final submission, verify each item in GitHub and replace or complete any project-specific material that is still missing:
 
-EmotiSense – NLP Sentiment & Emotion Analyzer
-EmotiSense is an NLP-based application that combines traditional Natural Language Processing techniques with Google's Gemini Large Language Model.
-The application analyzes user-provided text to identify:
-- Overall sentiment
-- Sentiment confidence
-- Multiple emotions
-- Dominant emotion
-- AI-generated explanation
-- Important keywords using TF-IDF
-
-Technologies Used
-- Python
-- Streamlit
-- NLTK
-- Scikit-learn
-- Google Gemini API
-- Google GenAI SDK
-- python-dotenv
-
-NLP Techniques
-- Text cleaning
-- Tokenization
-- Stopword removal
-- TF-IDF keyword extraction
-- LLM-based sentiment analysis
-- LLM-based emotion analysis
-- Prompt engineering
-- Structured JSON generation
-
-Project Location
-The complete project is available at:
-capstone/EmotiSense/
-See the project-specific README inside the folder for installation instructions, project details, architecture, and usage.
-
----
+- [ ] Keep this personal repository public unless instructed otherwise.
+- [ ] Add the instructor as a collaborator to this repository and retain access during training.
+- [ ] Create or confirm the separate team capstone repository; add all team members and the instructor as collaborators.
+- [ ] Record meaningful weekly updates in commits and issues; each team member should make and document their contributions.
+- [ ] Use branches, pull requests, reviews, and approved merges for team changes.
+- [ ] Complete the presentation, capture real application screenshots, and include genuine test/evaluation results in `presentations/` and `resources/`.
+- [ ] Submit this personal repository URL, the team capstone repository URL, the presentation, and any other materials requested by the instructor.
 
 ## GitHub
 
-**GitHub Username:** `mitanshwagde-svg`
-
-**Personal Repository:**  
-https://github.com/mitanshwagde-svg/MUJ-DS-23FE10CDS00347
-
----
+- Personal repository: <https://github.com/mitanshwagde-svg/MUJ-DS-23FE10CDS00347>
+- GitHub username: [mitanshwagde-svg](https://github.com/mitanshwagde-svg)
 
 ## Author
 
-**Mitansh Wagde**  
-B.Tech Data Science  
-Manipal University Jaipur  
+Mitansh Wagde
+B.Tech Data Science
+Manipal University Jaipur
 Batch F
