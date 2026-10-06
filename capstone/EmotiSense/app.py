@@ -42,17 +42,6 @@ st.markdown(
 
 
 # -----------------------------
-# Page Configuration
-# -----------------------------
-
-st.set_page_config(
-    page_title="EmotiSense",
-    page_icon="🧠",
-    layout="centered"
-)
-
-
-# -----------------------------
 # Header
 # -----------------------------
 
