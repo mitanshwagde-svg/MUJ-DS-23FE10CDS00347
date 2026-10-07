@@ -86,8 +86,39 @@ Return ONLY the JSON object specified in the system instructions.
         result["_model_used"] = model
         return result
 
-    except (errors.APIError, httpx.HTTPError, ValueError) as error:
+    except errors.APIError as error:
+        if error.code == 504:
+            message = (
+                "Gemini's server timed out while processing this request (504). "
+                "Wait a few seconds and try again. If it keeps happening, try "
+                "a shorter text; repeated 504s may indicate temporary Gemini "
+                "service load."
+            )
+        elif error.code == 429:
+            message = (
+                "Gemini's API quota or rate limit was reached (429). "
+                "Wait before retrying or check the quota for your API key."
+            )
+        else:
+            message = (
+                f"Gemini returned an API error ({error.code}). "
+                "Please try again later."
+            )
+
         return {
-            "error": "Gemini analysis failed or timed out. Please try again.",
+            "error": message,
+            "details": [f"HTTP {error.code} {error.status or ''}".strip()]
+        }
+    except httpx.TimeoutException:
+        return {
+            "error": (
+                "The request to Gemini timed out after 15 seconds. "
+                "Check your connection and try again."
+            ),
+            "details": ["Client request timeout"]
+        }
+    except (httpx.HTTPError, ValueError) as error:
+        return {
+            "error": "Gemini analysis failed. Please try again.",
             "details": [f"{type(error).__name__}: {error}"]
         }

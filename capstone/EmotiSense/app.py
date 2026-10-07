@@ -105,9 +105,7 @@ if st.button("🔍 Analyze Text", use_container_width=True):
 
         if "error" in llm_result:
 
-            st.error(
-                "Unable to complete the Gemini analysis."
-            )
+            st.error(llm_result["error"])
 
             details = llm_result.get("details", [])
             if details:
