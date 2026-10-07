@@ -109,7 +109,9 @@ if st.button("🔍 Analyze Text", use_container_width=True):
                 "Unable to complete the Gemini analysis."
             )
 
-            st.write(llm_result)
+            details = llm_result.get("details", [])
+            if details:
+                st.code("\n".join(str(detail) for detail in details))
 
         else:
 
@@ -234,16 +236,16 @@ if st.button("🔍 Analyze Text", use_container_width=True):
                     "**Tokens:**"
                 )
 
-                st.write(
-                    nlp_result["tokens"]
+                st.code(
+                    " ".join(nlp_result["tokens"])
                 )
 
                 st.write(
                     "**Stopword-Filtered Tokens:**"
                 )
 
-                st.write(
-                    nlp_result["filtered_tokens"]
+                st.code(
+                    " ".join(nlp_result["filtered_tokens"])
                 )
 
                 st.write(
