@@ -1,8 +1,8 @@
 {
     "app_name": "EmotiSense",
     "app_version": "1.0.0",
-    "model": "gemini-flash-latest",
-    "max_tokens": 1000,
+    "model": "gemini-2.5-flash-lite",
+    "max_tokens": 400,
     "temperature": 0.2,
     "emotions": [
         "joy",
