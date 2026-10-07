@@ -99,6 +99,12 @@ Return ONLY the JSON object specified in the system instructions.
                 "Gemini's API quota or rate limit was reached (429). "
                 "Wait before retrying or check the quota for your API key."
             )
+        elif error.code == 404:
+            message = (
+                f"The configured Gemini model '{model}' is unavailable to this "
+                "API key. Update the model in config/config.json to a currently "
+                "available Gemini model."
+            )
         else:
             message = (
                 f"Gemini returned an API error ({error.code}). "

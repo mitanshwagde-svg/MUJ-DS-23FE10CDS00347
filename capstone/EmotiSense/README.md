@@ -23,7 +23,7 @@ sensitive or identifying information.
 - Python 3.10 or newer
 - A Google Gemini API key
 - Internet access for initial NLTK resource downloads and Gemini analysis
-- Gemini model: `gemini-2.5-flash-lite` (configured in `config/config.json`)
+- Gemini model: `gemini-3.5-flash-lite` (configured in `config/config.json`)
 
 ## Installation
 
